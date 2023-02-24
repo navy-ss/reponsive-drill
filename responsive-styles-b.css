@@ -1,0 +1,76 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+}
+#header {
+    background-color: #d1d2d4;
+    height: 7rem;
+}
+#section {
+    display: flex;
+    margin: 1rem 0;
+}
+
+.a {
+    background-color: #8cc63f;
+    width: 40vw;
+    height: 40rem;
+
+}
+.b {
+    background-color: #0b9444;
+    width: 30vw;
+    order: -1;
+}
+.c {
+    background-color: #f5ee31;
+    width: 30vw;
+}
+
+#footer {
+    background-color: #d1d2d4;
+    height: 7rem;
+}
+
+/* Media Queries for mobile devices */
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 1rem;
+    }
+    #header, #footer {
+        height: 3rem;
+    }
+    #section {
+        display: flex;
+        flex-direction: column;
+    }
+    .a {
+        order: -1;
+        width: 100%;
+        height: 15rem;
+    }
+    .b, .c {
+        width: 100%;
+        height: 10rem;
+    }
+}
+
+/* Media Queries for Medium Devices */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    #header, #footer {
+        height: 5rem;
+    }
+    #section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .a {
+        order: -1;
+        width: 100%;
+        height: 20rem;
+    }
+    .b, .c {
+        width: 50%;
+        height: 15rem;
+    }
+}

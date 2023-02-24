@@ -1,0 +1,72 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+}
+
+#header {
+    background-color: #d1d2d4;
+    height: 7rem;
+}
+
+#section {
+    display: flex;
+    margin: 1rem 0;
+    /* width: 100vw; */
+}
+
+.a {
+    background-color: #ef4036;
+    width: 75vw;
+    height: 20rem;
+}
+.b {
+    background-color: #fcb040;
+    width: 75vw;
+    height: 20rem;
+}
+.c {
+    background-color: #f5ee31;
+    height: 40rem;
+    width: 25%;
+}
+#footer {
+    background-color: #d1d2d4;
+    height: 7rem;
+}
+
+/* Media Queries for mobile devices */
+
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 1rem;
+    }
+    #header {
+        height: 3rem;
+    }
+    #section {
+        display: flex;
+        flex-direction: column;
+    }
+    .a, .b, .c {
+        height: 10rem;
+        width: 100%;
+    }
+    #footer {
+        height: 3rem;
+    }
+}
+
+/* Media Queries for medium devices*/
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    #heade, #footerr {
+        height: 5rem;
+    }
+    .a, .b, .c {
+        height: 15rem;
+        width: 50vw;
+    }
+    .c {
+        height: 30rem;
+    }
+}
